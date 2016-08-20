@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingTop="@dimen/small"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/top"
+        android:layout_below="@id/tb_lin"
+        android:textColor="@color/blue"
+        android:background="@color/dark_gray"
+        android:paddingBottom="@dimen/small"
+        android:textSize="@dimen/left"/>
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="128dp"
+        android:id="@+id/product_image"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/small"
+        android:paddingBottom="@dimen/small"
+        android:src="@drawable/menu"
+        android:layout_below="@id/product_name"/>
+    <LinearLayout
+        android:id="@+id/tv_lin"
+        android:layout_below="@id/product_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_bestprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingLeft="@dimen/top"
+                android:textStyle="bold"
+                android:background="@color/dark_gray"
+                android:textSize="@dimen/left"/>
+
+            <TextView
+                android:id="@+id/num_product_stores"
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/small"
+                android:paddingBottom="@dimen/small"
+                android:paddingLeft="@dimen/top"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:background="@color/dark_gray"
+                android:textSize="@dimen/text_size"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

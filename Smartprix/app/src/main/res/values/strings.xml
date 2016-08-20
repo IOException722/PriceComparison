@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Smartprix</string>
+    <string name="search">SEARCH</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Tap_to_Retry_new">No internet connectivity.\nTap to retry.</string>
+</resources>

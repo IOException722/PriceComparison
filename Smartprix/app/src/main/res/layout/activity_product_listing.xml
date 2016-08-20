@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductListing">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_lin"
+        android:background="@color/colorPrimary"
+        >
+        <include
+            android:id="@+id/tb"
+            layout="@layout/sm_toolbar"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/products_category"
+        android:layout_below="@id/tb_lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:clipToPadding="false"
+        android:divider="@color/white"
+        android:dividerHeight="5.0sp"
+        android:headerDividersEnabled="true"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:paddingBottom="?attr/actionBarSize"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:footerDividersEnabled="false"
+        />
+
+    <LinearLayout
+        android:id="@+id/error_loading_screen"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tb_lin"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/small"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:layout_gravity="center|center_vertical"
+            android:gravity="center|center_vertical"
+            android:orientation="vertical">
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/tryAgain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Tap_to_Retry_new"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
